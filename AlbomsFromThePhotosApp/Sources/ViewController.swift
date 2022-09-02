@@ -9,11 +9,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // MARK: - UI elements
+
+    // MARK: - LifeCycle
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        view.backgroundColor = .white
     }
+
+    // MARK: - Setup
+
 
 
 }
-
