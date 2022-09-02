@@ -50,6 +50,8 @@ class CellFirst: UICollectionViewCell {
 
     private func setupHierarchy() {
         contentView.addSubview(image)
+        contentView.addSubview(label)
+        contentView.addSubview(labelInt)
     }
 
     private func setupLayout() {
@@ -57,6 +59,12 @@ class CellFirst: UICollectionViewCell {
         image.rightAnchor.constraint(equalTo: contentView.rightAnchor).isActive = true
         image.topAnchor.constraint(equalTo: contentView.topAnchor).isActive = true
         image.bottomAnchor.constraint(equalTo: contentView.bottomAnchor).isActive = true
+
+        label.topAnchor.constraint(equalTo: image.bottomAnchor, constant: -10).isActive = true
+        label.leftAnchor.constraint(equalTo: contentView.leftAnchor).isActive = true
+
+        labelInt.topAnchor.constraint(equalTo: label.bottomAnchor, constant: -10).isActive = true
+        labelInt.leftAnchor.constraint(equalTo: contentView.leftAnchor).isActive = true
     }
 
     // MARK: - Configuration

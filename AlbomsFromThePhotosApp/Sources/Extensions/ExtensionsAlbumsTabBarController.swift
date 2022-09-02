@@ -24,16 +24,19 @@ extension AlbumsTabBarController: UICollectionViewDataSource, UICollectionViewDe
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellFirst.identifier, for: indexPath) as! CellFirst
             cell.configuration(model: Model.modelMedia[indexPath.section][indexPath.item])
             return cell
+
         case 1:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellSecond.identifier, for: indexPath) as! CellSecond
             cell.configuration(model: Model.modelMedia[indexPath.section][indexPath.item])
             return cell
-        case 2:
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellThree.identifier, for: indexPath) as! CellThree
-            cell.configuration(model: Model.modelMedia[indexPath.section][indexPath.item])
-            return cell
+
+//        case 2:
+//            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellThree.identifier, for: indexPath) as! CellThree
+//            cell.configuration(model: Model.modelMedia[indexPath.section][indexPath.item])
+//            return cell
+
         default:
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellThree.identifier, for: indexPath) as! CellThree
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellFirst.identifier, for: indexPath) as! CellFirst
             cell.configuration(model: Model.modelMedia[indexPath.section][indexPath.item])
             return cell
         }
