@@ -12,5 +12,6 @@ class ForYouTabBarController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .systemPink
         title = "Для вас"
+        navigationController?.navigationBar.prefersLargeTitles = true
     }
 }

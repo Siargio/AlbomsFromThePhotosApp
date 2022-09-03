@@ -12,5 +12,6 @@ class MediaLibraryTabBarController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .red
         title = "Медиатека"
+        navigationController?.navigationBar.prefersLargeTitles = true
     }
 }
