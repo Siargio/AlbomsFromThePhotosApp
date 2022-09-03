@@ -13,24 +13,37 @@ class CellFirst: UICollectionViewCell {
 
     // MARK: - UI elements
 
-    private let image: UIImageView = {
+    private lazy var image: UIImageView = {
         let imageView = UIImageView()
         imageView.layer.cornerRadius = 10
         imageView.clipsToBounds = true
         imageView.contentMode = .scaleAspectFill
+        imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
 
-    private let label: UILabel = {
+     lazy var label: UILabel = {
         let labelFirst = UILabel()
-        labelFirst.font = UIFontMetrics.default.scaledFont(for: UIFont.systemFont(ofSize: 12, weight: .bold))
+        //labelFirst.font = UIFontMetrics.default.scaledFont(for: UIFont.systemFont(ofSize: 12, weight: .bold))
+        labelFirst.translatesAutoresizingMaskIntoConstraints = false
         return labelFirst
     }()
 
-    private let labelInt: UILabel = {
+    lazy var labelInt: UILabel = {
         let labelInt = UILabel()
-        labelInt.font = UIFont.preferredFont(forTextStyle: .title2)
+        //labelInt.font = UIFont.preferredFont(forTextStyle: .title2)
+        labelInt.textColor = .systemGray
+        labelInt.translatesAutoresizingMaskIntoConstraints = false
         return labelInt
+    }()
+
+    private lazy var mainStack: UIStackView = {
+        let mainStack = UIStackView()
+        mainStack.axis = .vertical
+        mainStack.alignment = .center
+        mainStack.distribution = .fill
+        mainStack.translatesAutoresizingMaskIntoConstraints = false
+        return mainStack
     }()
 
     // MARK: - LifeCycle
@@ -49,21 +62,29 @@ class CellFirst: UICollectionViewCell {
     // MARK: - Setup
 
     private func setupHierarchy() {
-        contentView.addSubview(image)
+        contentView.addSubview(mainStack)
+        mainStack.addArrangedSubview(image)
+//        mainStack.addArrangedSubview(bottomStack)
+//        bottomStack.addArrangedSubview(label)
+//        bottomStack.addArrangedSubview(labelInt)
+//        contentView.addSubview(image)
         contentView.addSubview(label)
         contentView.addSubview(labelInt)
     }
 
     private func setupLayout() {
-        image.leftAnchor.constraint(equalTo: contentView.leftAnchor).isActive = true
-        image.rightAnchor.constraint(equalTo: contentView.rightAnchor).isActive = true
-        image.topAnchor.constraint(equalTo: contentView.topAnchor).isActive = true
-        image.bottomAnchor.constraint(equalTo: contentView.bottomAnchor).isActive = true
 
-        label.topAnchor.constraint(equalTo: image.bottomAnchor, constant: -10).isActive = true
+        mainStack.heightAnchor.constraint(equalToConstant: 180).isActive = true
+        mainStack.widthAnchor.constraint(equalToConstant: 180).isActive = true
+//        image.leftAnchor.constraint(equalTo: contentView.leftAnchor).isActive = true
+//        image.rightAnchor.constraint(equalTo: contentView.rightAnchor).isActive = true
+//        image.topAnchor.constraint(equalTo: contentView.topAnchor).isActive = true
+//        image.bottomAnchor.constraint(equalTo: contentView.bottomAnchor).isActive = true
+//
+        label.topAnchor.constraint(equalTo: image.bottomAnchor, constant: 2).isActive = true
         label.leftAnchor.constraint(equalTo: contentView.leftAnchor).isActive = true
 
-        labelInt.topAnchor.constraint(equalTo: label.bottomAnchor, constant: -10).isActive = true
+        labelInt.topAnchor.constraint(equalTo: label.bottomAnchor, constant: 0).isActive = true
         labelInt.leftAnchor.constraint(equalTo: contentView.leftAnchor).isActive = true
     }
 

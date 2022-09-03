@@ -6,7 +6,7 @@
 //
 import UIKit
 
-class CellThree: UITableViewCell {
+class CellThree: UICollectionViewCell {
 
     static let identifier = "CellThree"
 
@@ -43,12 +43,11 @@ class CellThree: UITableViewCell {
 
     // MARK: - LifeCycle
 
-    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
+    override init(frame: CGRect) {
+        super.init(frame: frame)
         clipsToBounds = true
         setupHierarchy()
         setupView()
-
     }
 
     required init?(coder: NSCoder) {
@@ -71,7 +70,7 @@ class CellThree: UITableViewCell {
         image.heightAnchor.constraint(equalTo: image.heightAnchor, constant: 30).isActive = true
 
         label.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
-        label.leftAnchor.constraint(equalTo: image.leftAnchor, constant: 40).isActive = true
+        label.leftAnchor.constraint(equalTo: image.leftAnchor, constant: 30).isActive = true
 
         labelInt.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
         labelInt.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -35).isActive = true

@@ -9,15 +9,12 @@ import UIKit
 
 class TabBarController: UITabBarController, UITabBarControllerDelegate {
 
-    // MARK: - LifeCycle
-
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         delegate = self
         setupTabBarController()
         setupTabBarViewControllers()
-
     }
 
     func setupTabBarController() {
