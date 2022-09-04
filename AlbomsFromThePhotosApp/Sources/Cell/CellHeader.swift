@@ -48,11 +48,11 @@ class CellHeader: UICollectionReusableView {
     }
 
     private func setupLayout() {
-        title.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = false
-        title.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = false
+        title.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
+        title.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
 
         titleRight.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
-        titleRight.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
+        titleRight.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -25).isActive = true
         
     }
 

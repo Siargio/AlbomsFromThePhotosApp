@@ -79,13 +79,14 @@ class AlbumsTabBarController: UIViewController {
                                                                       trailing: 15)
                 layoutSection.orthogonalScrollingBehavior = .continuous
 
-                let layoutSectionHeaderSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.93),
-                                                                     heightDimension: .estimated(30))
+                let layoutSectionHeaderSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.06),
+                                                                     heightDimension: .estimated(40))
 
                 let layoutSectionHeader = NSCollectionLayoutBoundarySupplementaryItem(
                     layoutSize: layoutSectionHeaderSize,
                     elementKind: UICollectionView.elementKindSectionHeader,
                     alignment: .top)
+                layoutSectionHeader.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 25, bottom: 0, trailing: 0)
 
                 layoutSection.boundarySupplementaryItems = [layoutSectionHeader]
                 return layoutSection
@@ -113,13 +114,14 @@ class AlbumsTabBarController: UIViewController {
                                                                       trailing: 15)
                 layoutSection.orthogonalScrollingBehavior = .continuous
 
-                let layoutSectionHeaderSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.93),
-                                                                     heightDimension: .estimated(30))
+                let layoutSectionHeaderSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.06),
+                                                                     heightDimension: .estimated(40))
 
                 let layoutSectionHeader = NSCollectionLayoutBoundarySupplementaryItem(
                     layoutSize: layoutSectionHeaderSize,
                     elementKind: UICollectionView.elementKindSectionHeader,
                     alignment: .top)
+                layoutSectionHeader.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 25, bottom: 0, trailing: 0)
                 layoutSection.boundarySupplementaryItems = [layoutSectionHeader]
 
                 return layoutSection
@@ -146,13 +148,14 @@ class AlbumsTabBarController: UIViewController {
                                                                       bottom: 35,
                                                                       trailing: 10)
 
-                let layoutSectionHeaderSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.93),
-                                                                     heightDimension: .estimated(30))
+                let layoutSectionHeaderSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.06),
+                                                                     heightDimension: .estimated(40))
 
                 let layoutSectionHeader = NSCollectionLayoutBoundarySupplementaryItem(
                     layoutSize: layoutSectionHeaderSize,
                     elementKind: UICollectionView.elementKindSectionHeader,
                     alignment: .top)
+                layoutSectionHeader.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 25, bottom: 0, trailing: 0)
                 layoutSection.boundarySupplementaryItems = [layoutSectionHeader]
 
                 return layoutSection
@@ -179,13 +182,14 @@ class AlbumsTabBarController: UIViewController {
                                                                       bottom: 10,
                                                                       trailing: 10)
 
-                let layoutSectionHeaderSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.93),
-                                                                     heightDimension: .estimated(30))
+                let layoutSectionHeaderSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.06),
+                                                                     heightDimension: .estimated(40))
 
                 let layoutSectionHeader = NSCollectionLayoutBoundarySupplementaryItem(
                     layoutSize: layoutSectionHeaderSize,
                     elementKind: UICollectionView.elementKindSectionHeader,
                     alignment: .top)
+                layoutSectionHeader.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 25, bottom: 0, trailing: 0)
                 layoutSection.boundarySupplementaryItems = [layoutSectionHeader]
 
                 return layoutSection
