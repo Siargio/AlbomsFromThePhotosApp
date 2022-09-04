@@ -22,7 +22,6 @@
 		ECAEF09D28C25628004DBD87 /* CellSecond.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAEF09C28C25628004DBD87 /* CellSecond.swift */; };
 		ECAEF09F28C2563B004DBD87 /* CellFirst.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAEF09E28C2563B004DBD87 /* CellFirst.swift */; };
 		ECB4D15328C36BFD00AFD508 /* CellFour.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB4D15228C36BFD00AFD508 /* CellFour.swift */; };
-		ECBB823428C4B8D500F1774F /* CellHeaderRight.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB823328C4B8D500F1774F /* CellHeaderRight.swift */; };
 		ECC46C4D28C40E5500D7BD89 /* CellHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC46C4C28C40E5500D7BD89 /* CellHeader.swift */; };
 /* End PBXBuildFile section */
 
@@ -44,7 +43,6 @@
 		ECAEF09C28C25628004DBD87 /* CellSecond.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellSecond.swift; sourceTree = "<group>"; };
 		ECAEF09E28C2563B004DBD87 /* CellFirst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellFirst.swift; sourceTree = "<group>"; };
 		ECB4D15228C36BFD00AFD508 /* CellFour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellFour.swift; sourceTree = "<group>"; };
-		ECBB823328C4B8D500F1774F /* CellHeaderRight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellHeaderRight.swift; sourceTree = "<group>"; };
 		ECC46C4C28C40E5500D7BD89 /* CellHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -155,7 +153,6 @@
 				ECAEF09C28C25628004DBD87 /* CellSecond.swift */,
 				ECAEF09E28C2563B004DBD87 /* CellFirst.swift */,
 				ECC46C4C28C40E5500D7BD89 /* CellHeader.swift */,
-				ECBB823328C4B8D500F1774F /* CellHeaderRight.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -242,7 +239,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECBB823428C4B8D500F1774F /* CellHeaderRight.swift in Sources */,
 				ECAEF09828C235E6004DBD87 /* ModelAlboms.swift in Sources */,
 				ECAEF07728C20C94004DBD87 /* TabBarController.swift in Sources */,
 				ECAEF09428C222AC004DBD87 /* SearchTabBarController.swift in Sources */,

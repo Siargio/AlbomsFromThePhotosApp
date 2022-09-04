@@ -21,22 +21,27 @@ extension AlbumsTabBarController: UICollectionViewDataSource, UICollectionViewDe
 
         switch indexPath.section {
         case 0:
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellFirst.identifier, for: indexPath) as! CellFirst
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellFirst.identifier, for: indexPath) as? CellFirst else { return UICollectionViewCell() }
             cell.configuration(model: Model.modelMedia[indexPath.section][indexPath.item])
             return cell
 
         case 1:
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellSecond.identifier, for: indexPath) as! CellSecond
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellSecond.identifier, for: indexPath) as? CellSecond else { return UICollectionViewCell() }
             cell.configuration(model: Model.modelMedia[indexPath.section][indexPath.item])
             return cell
 
         case 2, 3:
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellThree.identifier, for: indexPath) as! CellThree
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellThree.identifier, for: indexPath) as? CellThree else { return UICollectionViewCell() }
             cell.configuration(model: Model.modelMedia[indexPath.section][indexPath.item])
+            if indexPath.row == indexPath.row { // или == 3(где то место которое отделить нужно)
+                let separatorView = UIView.init(frame: CGRect(x: 50, y: cell.frame.size.height - 1, width: cell.frame.size.width - 0, height: 1))
+                separatorView.backgroundColor = .lightGray
+                cell.contentView.addSubview(separatorView)
+            }
             return cell
             
         default:
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellFirst.identifier, for: indexPath) as! CellFirst
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellThree.identifier, for: indexPath) as? CellThree else { return UICollectionViewCell() }
             cell.configuration(model: Model.modelMedia[indexPath.section][indexPath.item])
             return cell
         }
@@ -49,39 +54,44 @@ extension AlbumsTabBarController: UICollectionViewDataSource, UICollectionViewDe
             guard let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: CellHeader.identifier, for: indexPath) as? CellHeader else { return UICollectionReusableView() }
             header.title.text = "Мои альбомы"
             header.titleRight.text = "Все"
+            if indexPath.row == indexPath.row { // или == 3(где то место которое отделить нужно)
+                let separatorView = UIView.init(frame: CGRect(x: 0, y: header.frame.size.height - 40, width: header.frame.size.width - 0, height: 1))
+                separatorView.backgroundColor = .lightGray
+                header.addSubview(separatorView)
+            }
             return header
         case 1:
-            let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: CellHeader.identifier, for: indexPath) as! CellHeader
+            guard let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: CellHeader.identifier, for: indexPath) as? CellHeader else { return UICollectionReusableView() }
             header.title.text = "Общие альбомы"
             header.titleRight.text = "Все"
+            if indexPath.row == indexPath.row { // или == 3(где то место которое отделить нужно)
+                let separatorView = UIView.init(frame: CGRect(x: 0, y: header.frame.size.height - 40, width: header.frame.size.width - 0, height: 1))
+                separatorView.backgroundColor = .lightGray
+                header.addSubview(separatorView)
+            }
             return header
         case 2:
-            let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: CellHeader.identifier, for: indexPath) as! CellHeader
+            guard let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: CellHeader.identifier, for: indexPath) as? CellHeader else { return UICollectionReusableView() }
             header.title.text = "Типы медиафайлов"
+            if indexPath.row == indexPath.row { // или == 3(где то место которое отделить нужно)
+                let separatorView = UIView.init(frame: CGRect(x: 0, y: header.frame.size.height - 40, width: header.frame.size.width - 0, height: 1))
+                separatorView.backgroundColor = .lightGray
+                header.addSubview(separatorView)
+            }
             return header
         case 3:
-            let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: CellHeader.identifier, for: indexPath) as! CellHeader
+            guard let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: CellHeader.identifier, for: indexPath) as? CellHeader else { return UICollectionReusableView() }
             header.title.text = "Другое"
+            if indexPath.row == indexPath.row { // или == 3(где то место которое отделить нужно)
+                let separatorView = UIView.init(frame: CGRect(x: 0, y: header.frame.size.height - 40, width: header.frame.size.width - 0, height: 1))
+                separatorView.backgroundColor = .lightGray
+                header.addSubview(separatorView)
+            }
             return header
         default:
-            let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: CellHeader.identifier, for: indexPath) as! CellHeader
+            guard let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: CellHeader.identifier, for: indexPath) as? CellHeader else { return UICollectionReusableView() }
             header.title.text = "Top Sales"
             return header
         }
     }
-
-//    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-//
-//        switch indexPath.section {
-//        case 0, 1:
-//            let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: CellHeaderRight.identifier, for: indexPath) as! CellHeaderRight
-//            header.titleRight.text = "Все"
-//            return header
-//
-//        default:
-//            let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: CellHeaderRight.identifier, for: indexPath) as! CellHeaderRight
-//            header.titleRight.text = ""
-//            return header
-//        }
-//    }
 }

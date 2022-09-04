@@ -44,12 +44,12 @@ class CellThree: UICollectionViewCell {
         return imageRight
     }()
 
-    private lazy var separatorView: UIView = {
-        let separatorView = UIView()
-        separatorView.backgroundColor = .lightGray
-        separatorView.translatesAutoresizingMaskIntoConstraints = false
-        return separatorView
-    }()
+//    private lazy var separatorView: UIView = {
+//        let separatorView = UIView()
+//        separatorView.backgroundColor = .lightGray
+//        separatorView.translatesAutoresizingMaskIntoConstraints = false
+//        return separatorView
+//    }()
 
     // MARK: - LifeCycle
 
@@ -71,7 +71,7 @@ class CellThree: UICollectionViewCell {
         contentView.addSubview(label)
         contentView.addSubview(labelInt)
         contentView.addSubview(imageRight)
-        contentView.addSubview(separatorView)
+        //contentView.addSubview(separatorView)
     }
 
     private func setupView() {
@@ -84,13 +84,13 @@ class CellThree: UICollectionViewCell {
         label.leftAnchor.constraint(equalTo: image.rightAnchor, constant: 20).isActive = true
 
         labelInt.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
-        labelInt.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -35).isActive = true
+        labelInt.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -30).isActive = true
 
         imageRight.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
         imageRight.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -10).isActive = true
 
-        separatorView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
-        separatorView.leftAnchor.constraint(equalTo: labelInt.leftAnchor, constant: 5).isActive = true
+        //separatorView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
+        //separatorView.leftAnchor.constraint(equalTo: labelInt.leftAnchor, constant: 5).isActive = true
     }
 
     // MARK: - Configuration

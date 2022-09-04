@@ -35,8 +35,7 @@ class CellFour: UICollectionViewCell {
     }()
 
     private lazy var imageRight: UIImageView = {
-        let icon = UIImage(systemName: "play")
-        let imageRight = UIImageView(image: icon)
+        let imageRight = UIImageView()
         imageRight.contentMode = .scaleToFill
         imageRight.tintColor = .systemGray2
         imageRight.translatesAutoresizingMaskIntoConstraints = false
@@ -75,7 +74,7 @@ class CellFour: UICollectionViewCell {
         label.leftAnchor.constraint(equalTo: image.rightAnchor, constant: 20).isActive = true
 
         labelInt.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
-        labelInt.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -35).isActive = true
+        labelInt.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -30).isActive = true
 
         imageRight.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
         imageRight.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -10).isActive = true
