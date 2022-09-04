@@ -14,24 +14,34 @@ class CellThree: UICollectionViewCell {
 
     private lazy var image: UIImageView = {
         let image = UIImageView()
-        image.contentMode = .scaleToFill
+        image.contentMode = .scaleAspectFit
         image.layer.cornerRadius = 8
+        image.tintColor = .systemBlue
         image.translatesAutoresizingMaskIntoConstraints = false
         return image
     }()
 
     private lazy var label: UILabel = {
         let label = UILabel()
-        //label.textColor = .black
+        label.textColor = .systemBlue
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
 
     private lazy var labelInt: UILabel = {
         let labelInt = UILabel()
-        //label.textColor = .black
+        labelInt.textColor = .systemGray
         labelInt.translatesAutoresizingMaskIntoConstraints = false
         return labelInt
+    }()
+
+    private lazy var imageRight: UIImageView = {
+        let icon = UIImage(systemName: "chevron.right")
+        let imageRight = UIImageView(image: icon)
+        imageRight.contentMode = .scaleToFill
+        imageRight.tintColor = .systemGray2
+        imageRight.translatesAutoresizingMaskIntoConstraints = false
+        return imageRight
     }()
 
     private lazy var separatorView: UIView = {
@@ -60,20 +70,24 @@ class CellThree: UICollectionViewCell {
         contentView.addSubview(image)
         contentView.addSubview(label)
         contentView.addSubview(labelInt)
+        contentView.addSubview(imageRight)
         contentView.addSubview(separatorView)
     }
 
     private func setupView() {
         image.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
-        image.leftAnchor.constraint(equalTo: contentView.leftAnchor, constant: 20).isActive = true
-        image.widthAnchor.constraint(equalTo: image.widthAnchor, constant: 30).isActive = true
-        image.heightAnchor.constraint(equalTo: image.heightAnchor, constant: 30).isActive = true
+        image.leftAnchor.constraint(equalTo: contentView.leftAnchor).isActive = true
+        image.heightAnchor.constraint(equalToConstant: 30).isActive = true
+        image.widthAnchor.constraint(equalToConstant: 30).isActive = true
 
         label.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
-        label.leftAnchor.constraint(equalTo: image.leftAnchor, constant: 30).isActive = true
+        label.leftAnchor.constraint(equalTo: image.rightAnchor, constant: 20).isActive = true
 
         labelInt.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
         labelInt.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -35).isActive = true
+
+        imageRight.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
+        imageRight.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -10).isActive = true
 
         separatorView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
         separatorView.leftAnchor.constraint(equalTo: labelInt.leftAnchor, constant: 5).isActive = true
@@ -82,7 +96,7 @@ class CellThree: UICollectionViewCell {
     // MARK: - Configuration
 
     func configuration(model: Model) {
-        self.image.image = UIImage(named: model.image)
+        self.image.image = UIImage(systemName: model.image)
         self.label.text = model.label
         self.labelInt.text = model.labelInt
     }

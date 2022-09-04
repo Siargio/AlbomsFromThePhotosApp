@@ -30,18 +30,11 @@ extension AlbumsTabBarController: UICollectionViewDataSource, UICollectionViewDe
             cell.configuration(model: Model.modelMedia[indexPath.section][indexPath.item])
             return cell
 
-        case 2:
+        case 2, 3:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellThree.identifier, for: indexPath) as! CellThree
             cell.configuration(model: Model.modelMedia[indexPath.section][indexPath.item])
-            cell.backgroundColor = .systemBlue
             return cell
-
-        case 3:
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellFour.identifier, for: indexPath) as! CellFour
-            cell.configuration(model: Model.modelMedia[indexPath.section][indexPath.item])
-            cell.backgroundColor = .systemBlue
-            return cell
-
+            
         default:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellFirst.identifier, for: indexPath) as! CellFirst
             cell.configuration(model: Model.modelMedia[indexPath.section][indexPath.item])
@@ -53,12 +46,14 @@ extension AlbumsTabBarController: UICollectionViewDataSource, UICollectionViewDe
 
         switch indexPath.section {
         case 0:
-            let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: CellHeader.identifier, for: indexPath) as! CellHeader
+            guard let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: CellHeader.identifier, for: indexPath) as? CellHeader else { return UICollectionReusableView() }
             header.title.text = "Мои альбомы"
+            header.titleRight.text = "Все"
             return header
         case 1:
             let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: CellHeader.identifier, for: indexPath) as! CellHeader
             header.title.text = "Общие альбомы"
+            header.titleRight.text = "Все"
             return header
         case 2:
             let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: CellHeader.identifier, for: indexPath) as! CellHeader
@@ -74,4 +69,19 @@ extension AlbumsTabBarController: UICollectionViewDataSource, UICollectionViewDe
             return header
         }
     }
+
+//    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+//
+//        switch indexPath.section {
+//        case 0, 1:
+//            let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: CellHeaderRight.identifier, for: indexPath) as! CellHeaderRight
+//            header.titleRight.text = "Все"
+//            return header
+//
+//        default:
+//            let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: CellHeaderRight.identifier, for: indexPath) as! CellHeaderRight
+//            header.titleRight.text = ""
+//            return header
+//        }
+//    }
 }

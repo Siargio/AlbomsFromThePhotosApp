@@ -1,5 +1,5 @@
 //
-//  CellHeader.swift
+//  CellHeaderRight.swift
 //  AlbomsFromThePhotosApp
 //
 //  Created by Sergio on 4.09.22.
@@ -7,21 +7,15 @@
 
 import UIKit
 
-class CellHeader: UICollectionReusableView {
+class CellHeaderRight: UICollectionReusableView {
 
-    static let identifier = "CellHeader"
+    static let identifier = "CellHeaderRight"
 
     // MARK: - UI elements
 
-    lazy var title: UILabel = {
-        let title = UILabel()
-        title.font = UIFont.systemFont(ofSize: 25, weight: .bold)
-        title.translatesAutoresizingMaskIntoConstraints = false
-        return title
-    }()
-
     lazy var titleRight: UILabel = {
         let titleRight = UILabel()
+        titleRight.text = "все"
         titleRight.textColor = .systemBlue
         titleRight.translatesAutoresizingMaskIntoConstraints = false
         return titleRight
@@ -43,21 +37,16 @@ class CellHeader: UICollectionReusableView {
     // MARK: - Setup
 
     private func setupHierarchy() {
-        addSubview(title)
         addSubview(titleRight)
     }
 
     private func setupLayout() {
-        title.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = false
-        title.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = false
-
-        titleRight.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
-        titleRight.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
-        
+        titleRight.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = false
+        titleRight.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = false
     }
 
     override func prepareForReuse() {
         super.prepareForReuse()
-        title.text = nil
+        titleRight.text = nil
     }
 }
