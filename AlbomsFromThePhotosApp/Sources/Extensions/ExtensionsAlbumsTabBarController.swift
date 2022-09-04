@@ -82,6 +82,7 @@ extension AlbumsTabBarController: UICollectionViewDataSource, UICollectionViewDe
         case 3:
             guard let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: CellHeader.identifier, for: indexPath) as? CellHeader else { return UICollectionReusableView() }
             header.title.text = "Другое"
+            header.titleRight.text = ""
             if indexPath.row == indexPath.row { // или == 3(где то место которое отделить нужно)
                 let separatorView = UIView.init(frame: CGRect(x: 0, y: header.frame.size.height - 40, width: header.frame.size.width - 0, height: 1))
                 separatorView.backgroundColor = .lightGray

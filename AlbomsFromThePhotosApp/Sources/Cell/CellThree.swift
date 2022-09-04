@@ -44,13 +44,6 @@ class CellThree: UICollectionViewCell {
         return imageRight
     }()
 
-//    private lazy var separatorView: UIView = {
-//        let separatorView = UIView()
-//        separatorView.backgroundColor = .lightGray
-//        separatorView.translatesAutoresizingMaskIntoConstraints = false
-//        return separatorView
-//    }()
-
     // MARK: - LifeCycle
 
     override init(frame: CGRect) {
@@ -71,7 +64,6 @@ class CellThree: UICollectionViewCell {
         contentView.addSubview(label)
         contentView.addSubview(labelInt)
         contentView.addSubview(imageRight)
-        //contentView.addSubview(separatorView)
     }
 
     private func setupView() {
@@ -88,9 +80,6 @@ class CellThree: UICollectionViewCell {
 
         imageRight.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
         imageRight.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -10).isActive = true
-
-        //separatorView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
-        //separatorView.leftAnchor.constraint(equalTo: labelInt.leftAnchor, constant: 5).isActive = true
     }
 
     // MARK: - Configuration
