@@ -23,6 +23,7 @@ class CellFour: UICollectionViewCell {
     private lazy var label: UILabel = {
         let label = UILabel()
         label.textColor = .systemBlue
+        label.font = .systemFont(ofSize: 20)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
