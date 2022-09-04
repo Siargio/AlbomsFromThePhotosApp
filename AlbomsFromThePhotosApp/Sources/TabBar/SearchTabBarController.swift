@@ -10,7 +10,7 @@ import UIKit
 class SearchTabBarController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .purple
+        view.backgroundColor = .white
         title = "Поиск"
         navigationController?.navigationBar.prefersLargeTitles = true
     }

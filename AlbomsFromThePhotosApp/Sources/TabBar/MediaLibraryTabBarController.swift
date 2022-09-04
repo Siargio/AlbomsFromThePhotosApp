@@ -10,7 +10,7 @@ import UIKit
 class MediaLibraryTabBarController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .red
+        view.backgroundColor = .white
         title = "Медиатека"
         navigationController?.navigationBar.prefersLargeTitles = true
     }

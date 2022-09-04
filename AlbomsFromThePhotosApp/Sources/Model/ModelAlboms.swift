@@ -18,8 +18,8 @@ extension Model {
         [Model(image: "photo1", label: "Недавние", labelInt: "439"),
          Model(image: "photo2", label: "Избранные", labelInt: "33"),
          Model(image: "photo3", label: "Instagram", labelInt: "49"),
-         Model(image: "photo6", label: "WhatsApp", labelInt: "2"),
          Model(image: "photo4", label: "Lightroom", labelInt: "24"),
+         Model(image: "photo6", label: "WhatsApp", labelInt: "2"),
          Model(image: "photo5", label: "Aliexpress", labelInt: "1")],
 
         [Model(image: "photo7", label: "Food", labelInt: "67"),
@@ -32,7 +32,7 @@ extension Model {
          Model(image: "livephoto", label: "Фото Live Photos", labelInt: "56"),
          Model(image: "cube", label: "Портреты", labelInt: "9"),
          Model(image: "timelapse", label: "Таймлапс", labelInt: "13"),
-         Model(image: "square.stack.3d.forward.dottedline", label: "Замедленно", labelInt: "5"),
+         Model(image: "slowmo", label: "Замедленно", labelInt: "5"),
          Model(image: "camera.viewfinder", label: "Снимки экрана", labelInt: "25")],
 
         [Model(image: "square.and.arrow.down", label: "Импортированные", labelInt: "0"),

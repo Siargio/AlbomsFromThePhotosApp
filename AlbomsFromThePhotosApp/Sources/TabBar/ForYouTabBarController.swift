@@ -10,7 +10,7 @@ import UIKit
 class ForYouTabBarController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemPink
+        view.backgroundColor = .white
         title = "Для вас"
         navigationController?.navigationBar.prefersLargeTitles = true
     }
