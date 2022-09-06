@@ -45,6 +45,13 @@ class CellThree: UICollectionViewCell {
         return imageRight
     }()
 
+    private lazy var separatorView: UIView = {
+        let separatorView = UIView()
+        separatorView.backgroundColor = .systemGray
+        separatorView.translatesAutoresizingMaskIntoConstraints = false
+        return separatorView
+    }()
+
     // MARK: - LifeCycle
 
     override init(frame: CGRect) {
@@ -65,6 +72,7 @@ class CellThree: UICollectionViewCell {
         contentView.addSubview(label)
         contentView.addSubview(labelInt)
         contentView.addSubview(imageRight)
+        contentView.addSubview(separatorView)
     }
 
     private func setupView() {
@@ -81,6 +89,11 @@ class CellThree: UICollectionViewCell {
 
         imageRight.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
         imageRight.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -10).isActive = true
+
+        separatorView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor).isActive = true
+        separatorView.heightAnchor.constraint(equalToConstant: 1).isActive = true
+        separatorView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor).isActive = true
+        separatorView.leadingAnchor.constraint(equalTo: label.leadingAnchor).isActive = true
     }
 
     // MARK: - Configuration
@@ -95,5 +108,9 @@ class CellThree: UICollectionViewCell {
     override func prepareForReuse() {
         super.prepareForReuse()
         self.image.image = nil
+    }
+
+    func separatorOff(hide: Bool) {
+        separatorView.isHidden = hide
     }
 }

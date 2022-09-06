@@ -17,10 +17,8 @@
 		ECAEF09428C222AC004DBD87 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAEF09328C222AC004DBD87 /* SearchViewController.swift */; };
 		ECAEF09628C22A54004DBD87 /* ExtensionsAlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAEF09528C22A54004DBD87 /* ExtensionsAlbumsViewController.swift */; };
 		ECAEF09828C235E6004DBD87 /* ModelAlboms.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAEF09728C235E6004DBD87 /* ModelAlboms.swift */; };
-		ECAEF09B28C2561A004DBD87 /* CellThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAEF09A28C2561A004DBD87 /* CellThree.swift */; };
-		ECAEF09D28C25628004DBD87 /* CellSecond.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAEF09C28C25628004DBD87 /* CellSecond.swift */; };
-		ECAEF09F28C2563B004DBD87 /* CellFirst.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAEF09E28C2563B004DBD87 /* CellFirst.swift */; };
-		ECB4D15328C36BFD00AFD508 /* CellFour.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB4D15228C36BFD00AFD508 /* CellFour.swift */; };
+		ECAEF09B28C2561A004DBD87 /* CellThreeFour.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAEF09A28C2561A004DBD87 /* CellThreeFour.swift */; };
+		ECAEF09F28C2563B004DBD87 /* CellFirstSecond.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAEF09E28C2563B004DBD87 /* CellFirstSecond.swift */; };
 		ECC46C4D28C40E5500D7BD89 /* CellHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC46C4C28C40E5500D7BD89 /* CellHeader.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,10 +35,8 @@
 		ECAEF09328C222AC004DBD87 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		ECAEF09528C22A54004DBD87 /* ExtensionsAlbumsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsAlbumsViewController.swift; sourceTree = "<group>"; };
 		ECAEF09728C235E6004DBD87 /* ModelAlboms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelAlboms.swift; sourceTree = "<group>"; };
-		ECAEF09A28C2561A004DBD87 /* CellThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellThree.swift; sourceTree = "<group>"; };
-		ECAEF09C28C25628004DBD87 /* CellSecond.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellSecond.swift; sourceTree = "<group>"; };
-		ECAEF09E28C2563B004DBD87 /* CellFirst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellFirst.swift; sourceTree = "<group>"; };
-		ECB4D15228C36BFD00AFD508 /* CellFour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellFour.swift; sourceTree = "<group>"; };
+		ECAEF09A28C2561A004DBD87 /* CellThreeFour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellThreeFour.swift; sourceTree = "<group>"; };
+		ECAEF09E28C2563B004DBD87 /* CellFirstSecond.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellFirstSecond.swift; sourceTree = "<group>"; };
 		ECC46C4C28C40E5500D7BD89 /* CellHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -128,10 +124,8 @@
 		ECAEF09928C255FF004DBD87 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				ECB4D15228C36BFD00AFD508 /* CellFour.swift */,
-				ECAEF09A28C2561A004DBD87 /* CellThree.swift */,
-				ECAEF09C28C25628004DBD87 /* CellSecond.swift */,
-				ECAEF09E28C2563B004DBD87 /* CellFirst.swift */,
+				ECAEF09A28C2561A004DBD87 /* CellThreeFour.swift */,
+				ECAEF09E28C2563B004DBD87 /* CellFirstSecond.swift */,
 				ECC46C4C28C40E5500D7BD89 /* CellHeader.swift */,
 			);
 			path = Cell;
@@ -232,12 +226,10 @@
 				ECAEF09428C222AC004DBD87 /* SearchViewController.swift in Sources */,
 				ECAEF09228C222A1004DBD87 /* AlbumsViewController.swift in Sources */,
 				ECC46C4D28C40E5500D7BD89 /* CellHeader.swift in Sources */,
-				ECAEF09B28C2561A004DBD87 /* CellThree.swift in Sources */,
-				ECAEF09D28C25628004DBD87 /* CellSecond.swift in Sources */,
-				ECAEF09F28C2563B004DBD87 /* CellFirst.swift in Sources */,
+				ECAEF09B28C2561A004DBD87 /* CellThreeFour.swift in Sources */,
+				ECAEF09F28C2563B004DBD87 /* CellFirstSecond.swift in Sources */,
 				ECAEF09628C22A54004DBD87 /* ExtensionsAlbumsViewController.swift in Sources */,
 				ECAEF07328C20C94004DBD87 /* AppDelegate.swift in Sources */,
-				ECB4D15328C36BFD00AFD508 /* CellFour.swift in Sources */,
 				ECAEF08E28C22288004DBD87 /* MediaLibraryViewController.swift in Sources */,
 				ECAEF09028C22295004DBD87 /* ForYouViewController.swift in Sources */,
 				ECAEF07528C20C94004DBD87 /* SceneDelegate.swift in Sources */,

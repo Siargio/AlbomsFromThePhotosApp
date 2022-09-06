@@ -27,6 +27,13 @@ class CellHeader: UICollectionReusableView {
         return titleRight
     }()
 
+    private lazy var separatorView: UIView = {
+        let separatorView = UIView()
+        separatorView.backgroundColor = .systemGray
+        separatorView.translatesAutoresizingMaskIntoConstraints = false
+        return separatorView
+    }()
+
     // MARK: - Initializirs
 
     override init(frame: CGRect) {
@@ -45,6 +52,7 @@ class CellHeader: UICollectionReusableView {
     private func setupHierarchy() {
         addSubview(title)
         addSubview(titleRight)
+        addSubview(separatorView)
     }
 
     private func setupLayout() {
@@ -53,6 +61,11 @@ class CellHeader: UICollectionReusableView {
 
         titleRight.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
         titleRight.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -25).isActive = true
+
+        separatorView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
+        separatorView.heightAnchor.constraint(equalToConstant: 1).isActive = true
+        separatorView.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
+        separatorView.leadingAnchor.constraint(equalTo: title.leadingAnchor).isActive = true
     }
 
     override func prepareForReuse() {
