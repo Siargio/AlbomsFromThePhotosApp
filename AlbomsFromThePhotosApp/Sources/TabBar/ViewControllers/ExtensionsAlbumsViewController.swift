@@ -33,7 +33,8 @@ extension AlbumsTabBarController: UICollectionViewDataSource, UICollectionViewDe
         case 2, 3:
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellThree.identifier, for: indexPath) as? CellThree else { return UICollectionViewCell() }
             cell.configuration(model: Model.modelMedia[indexPath.section][indexPath.item])
-            if indexPath.row == indexPath.row { // или == 3(где то место которое отделить нужно)
+            let lastCell = indexPath.row == (Model.modelMedia[indexPath.section].count - 1) ? true : false
+            if !lastCell {
                 let separatorView = UIView.init(frame: CGRect(x: 50, y: cell.frame.size.height - 1, width: cell.frame.size.width - 0, height: 1))
                 separatorView.backgroundColor = .lightGray
                 cell.contentView.addSubview(separatorView)
@@ -82,7 +83,6 @@ extension AlbumsTabBarController: UICollectionViewDataSource, UICollectionViewDe
         case 3:
             guard let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: CellHeader.identifier, for: indexPath) as? CellHeader else { return UICollectionReusableView() }
             header.title.text = "Другое"
-            header.titleRight.text = ""
             if indexPath.row == indexPath.row { // или == 3(где то место которое отделить нужно)
                 let separatorView = UIView.init(frame: CGRect(x: 0, y: header.frame.size.height - 40, width: header.frame.size.width - 0, height: 1))
                 separatorView.backgroundColor = .lightGray
