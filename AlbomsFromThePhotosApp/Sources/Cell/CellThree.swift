@@ -89,6 +89,7 @@ class CellThree: UICollectionViewCell {
         self.image.image = UIImage(systemName: model.image)
         self.label.text = model.label
         self.labelInt.text = model.labelInt
+        
     }
 
     override func prepareForReuse() {

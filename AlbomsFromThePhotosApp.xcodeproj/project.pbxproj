@@ -11,12 +11,11 @@
 		ECAEF07528C20C94004DBD87 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAEF07428C20C94004DBD87 /* SceneDelegate.swift */; };
 		ECAEF07728C20C94004DBD87 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAEF07628C20C94004DBD87 /* TabBarController.swift */; };
 		ECAEF07C28C20C95004DBD87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECAEF07B28C20C95004DBD87 /* Assets.xcassets */; };
-		ECAEF07F28C20C95004DBD87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECAEF07D28C20C95004DBD87 /* LaunchScreen.storyboard */; };
-		ECAEF08E28C22288004DBD87 /* MediaLibraryTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAEF08D28C22288004DBD87 /* MediaLibraryTabBarController.swift */; };
-		ECAEF09028C22295004DBD87 /* ForYouTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAEF08F28C22295004DBD87 /* ForYouTabBarController.swift */; };
-		ECAEF09228C222A1004DBD87 /* AlbumsTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAEF09128C222A1004DBD87 /* AlbumsTabBarController.swift */; };
-		ECAEF09428C222AC004DBD87 /* SearchTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAEF09328C222AC004DBD87 /* SearchTabBarController.swift */; };
-		ECAEF09628C22A54004DBD87 /* ExtensionsAlbumsTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAEF09528C22A54004DBD87 /* ExtensionsAlbumsTabBarController.swift */; };
+		ECAEF08E28C22288004DBD87 /* MediaLibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAEF08D28C22288004DBD87 /* MediaLibraryViewController.swift */; };
+		ECAEF09028C22295004DBD87 /* ForYouViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAEF08F28C22295004DBD87 /* ForYouViewController.swift */; };
+		ECAEF09228C222A1004DBD87 /* AlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAEF09128C222A1004DBD87 /* AlbumsViewController.swift */; };
+		ECAEF09428C222AC004DBD87 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAEF09328C222AC004DBD87 /* SearchViewController.swift */; };
+		ECAEF09628C22A54004DBD87 /* ExtensionsAlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAEF09528C22A54004DBD87 /* ExtensionsAlbumsViewController.swift */; };
 		ECAEF09828C235E6004DBD87 /* ModelAlboms.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAEF09728C235E6004DBD87 /* ModelAlboms.swift */; };
 		ECAEF09B28C2561A004DBD87 /* CellThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAEF09A28C2561A004DBD87 /* CellThree.swift */; };
 		ECAEF09D28C25628004DBD87 /* CellSecond.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAEF09C28C25628004DBD87 /* CellSecond.swift */; };
@@ -31,13 +30,12 @@
 		ECAEF07428C20C94004DBD87 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		ECAEF07628C20C94004DBD87 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		ECAEF07B28C20C95004DBD87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		ECAEF07E28C20C95004DBD87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ECAEF08028C20C95004DBD87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ECAEF08D28C22288004DBD87 /* MediaLibraryTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaLibraryTabBarController.swift; sourceTree = "<group>"; };
-		ECAEF08F28C22295004DBD87 /* ForYouTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForYouTabBarController.swift; sourceTree = "<group>"; };
-		ECAEF09128C222A1004DBD87 /* AlbumsTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsTabBarController.swift; sourceTree = "<group>"; };
-		ECAEF09328C222AC004DBD87 /* SearchTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTabBarController.swift; sourceTree = "<group>"; };
-		ECAEF09528C22A54004DBD87 /* ExtensionsAlbumsTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsAlbumsTabBarController.swift; sourceTree = "<group>"; };
+		ECAEF08D28C22288004DBD87 /* MediaLibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaLibraryViewController.swift; sourceTree = "<group>"; };
+		ECAEF08F28C22295004DBD87 /* ForYouViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForYouViewController.swift; sourceTree = "<group>"; };
+		ECAEF09128C222A1004DBD87 /* AlbumsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsViewController.swift; sourceTree = "<group>"; };
+		ECAEF09328C222AC004DBD87 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		ECAEF09528C22A54004DBD87 /* ExtensionsAlbumsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsAlbumsViewController.swift; sourceTree = "<group>"; };
 		ECAEF09728C235E6004DBD87 /* ModelAlboms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelAlboms.swift; sourceTree = "<group>"; };
 		ECAEF09A28C2561A004DBD87 /* CellThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellThree.swift; sourceTree = "<group>"; };
 		ECAEF09C28C25628004DBD87 /* CellSecond.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellSecond.swift; sourceTree = "<group>"; };
@@ -91,14 +89,6 @@
 			path = App;
 			sourceTree = "<group>";
 		};
-		ECAEF08728C20E48004DBD87 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				ECAEF09528C22A54004DBD87 /* ExtensionsAlbumsTabBarController.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 		ECAEF08828C20E4A004DBD87 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -107,22 +97,12 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		ECAEF08928C20E4C004DBD87 /* Storyboards */ = {
-			isa = PBXGroup;
-			children = (
-				ECAEF07D28C20C95004DBD87 /* LaunchScreen.storyboard */,
-			);
-			path = Storyboards;
-			sourceTree = "<group>";
-		};
 		ECAEF08A28C20E4E004DBD87 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				ECAEF09928C255FF004DBD87 /* Cell */,
-				ECAEF08728C20E48004DBD87 /* Extensions */,
 				ECAEF08828C20E4A004DBD87 /* Model */,
 				ECC46C4B28C3F1C200D7BD89 /* TabBar */,
-				ECAEF08928C20E4C004DBD87 /* Storyboards */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -157,14 +137,23 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		ECBA7F7828C77C5100C4F180 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				ECAEF08D28C22288004DBD87 /* MediaLibraryViewController.swift */,
+				ECAEF08F28C22295004DBD87 /* ForYouViewController.swift */,
+				ECAEF09128C222A1004DBD87 /* AlbumsViewController.swift */,
+				ECAEF09528C22A54004DBD87 /* ExtensionsAlbumsViewController.swift */,
+				ECAEF09328C222AC004DBD87 /* SearchViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		ECC46C4B28C3F1C200D7BD89 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
 				ECAEF07628C20C94004DBD87 /* TabBarController.swift */,
-				ECAEF08D28C22288004DBD87 /* MediaLibraryTabBarController.swift */,
-				ECAEF08F28C22295004DBD87 /* ForYouTabBarController.swift */,
-				ECAEF09128C222A1004DBD87 /* AlbumsTabBarController.swift */,
-				ECAEF09328C222AC004DBD87 /* SearchTabBarController.swift */,
+				ECBA7F7828C77C5100C4F180 /* ViewControllers */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -227,7 +216,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECAEF07F28C20C95004DBD87 /* LaunchScreen.storyboard in Resources */,
 				ECAEF07C28C20C95004DBD87 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,33 +229,22 @@
 			files = (
 				ECAEF09828C235E6004DBD87 /* ModelAlboms.swift in Sources */,
 				ECAEF07728C20C94004DBD87 /* TabBarController.swift in Sources */,
-				ECAEF09428C222AC004DBD87 /* SearchTabBarController.swift in Sources */,
-				ECAEF09228C222A1004DBD87 /* AlbumsTabBarController.swift in Sources */,
+				ECAEF09428C222AC004DBD87 /* SearchViewController.swift in Sources */,
+				ECAEF09228C222A1004DBD87 /* AlbumsViewController.swift in Sources */,
 				ECC46C4D28C40E5500D7BD89 /* CellHeader.swift in Sources */,
 				ECAEF09B28C2561A004DBD87 /* CellThree.swift in Sources */,
 				ECAEF09D28C25628004DBD87 /* CellSecond.swift in Sources */,
 				ECAEF09F28C2563B004DBD87 /* CellFirst.swift in Sources */,
-				ECAEF09628C22A54004DBD87 /* ExtensionsAlbumsTabBarController.swift in Sources */,
+				ECAEF09628C22A54004DBD87 /* ExtensionsAlbumsViewController.swift in Sources */,
 				ECAEF07328C20C94004DBD87 /* AppDelegate.swift in Sources */,
 				ECB4D15328C36BFD00AFD508 /* CellFour.swift in Sources */,
-				ECAEF08E28C22288004DBD87 /* MediaLibraryTabBarController.swift in Sources */,
-				ECAEF09028C22295004DBD87 /* ForYouTabBarController.swift in Sources */,
+				ECAEF08E28C22288004DBD87 /* MediaLibraryViewController.swift in Sources */,
+				ECAEF09028C22295004DBD87 /* ForYouViewController.swift in Sources */,
 				ECAEF07528C20C94004DBD87 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		ECAEF07D28C20C95004DBD87 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ECAEF07E28C20C95004DBD87 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		ECAEF08128C20C95004DBD87 /* Debug */ = {

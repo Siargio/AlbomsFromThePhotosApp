@@ -53,11 +53,11 @@ class CellHeader: UICollectionReusableView {
 
         titleRight.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
         titleRight.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -25).isActive = true
-        
     }
 
     override func prepareForReuse() {
         super.prepareForReuse()
         title.text = nil
+        titleRight.text = ""
     }
 }
