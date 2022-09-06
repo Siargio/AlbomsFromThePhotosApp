@@ -9,21 +9,35 @@
 /* Begin PBXBuildFile section */
 		ECAEF07328C20C94004DBD87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAEF07228C20C94004DBD87 /* AppDelegate.swift */; };
 		ECAEF07528C20C94004DBD87 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAEF07428C20C94004DBD87 /* SceneDelegate.swift */; };
-		ECAEF07728C20C94004DBD87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAEF07628C20C94004DBD87 /* ViewController.swift */; };
-		ECAEF07A28C20C94004DBD87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECAEF07828C20C94004DBD87 /* Main.storyboard */; };
+		ECAEF07728C20C94004DBD87 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAEF07628C20C94004DBD87 /* TabBarController.swift */; };
 		ECAEF07C28C20C95004DBD87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECAEF07B28C20C95004DBD87 /* Assets.xcassets */; };
-		ECAEF07F28C20C95004DBD87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECAEF07D28C20C95004DBD87 /* LaunchScreen.storyboard */; };
+		ECAEF08E28C22288004DBD87 /* MediaLibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAEF08D28C22288004DBD87 /* MediaLibraryViewController.swift */; };
+		ECAEF09028C22295004DBD87 /* ForYouViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAEF08F28C22295004DBD87 /* ForYouViewController.swift */; };
+		ECAEF09228C222A1004DBD87 /* AlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAEF09128C222A1004DBD87 /* AlbumsViewController.swift */; };
+		ECAEF09428C222AC004DBD87 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAEF09328C222AC004DBD87 /* SearchViewController.swift */; };
+		ECAEF09628C22A54004DBD87 /* ExtensionsAlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAEF09528C22A54004DBD87 /* ExtensionsAlbumsViewController.swift */; };
+		ECAEF09828C235E6004DBD87 /* ModelAlboms.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAEF09728C235E6004DBD87 /* ModelAlboms.swift */; };
+		ECAEF09B28C2561A004DBD87 /* CellThreeFour.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAEF09A28C2561A004DBD87 /* CellThreeFour.swift */; };
+		ECAEF09F28C2563B004DBD87 /* CellFirstSecond.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAEF09E28C2563B004DBD87 /* CellFirstSecond.swift */; };
+		ECC46C4D28C40E5500D7BD89 /* CellHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC46C4C28C40E5500D7BD89 /* CellHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		ECAEF06F28C20C94004DBD87 /* AlbomsFromThePhotosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlbomsFromThePhotosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECAEF07228C20C94004DBD87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECAEF07428C20C94004DBD87 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ECAEF07628C20C94004DBD87 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		ECAEF07928C20C94004DBD87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ECAEF07628C20C94004DBD87 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		ECAEF07B28C20C95004DBD87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		ECAEF07E28C20C95004DBD87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ECAEF08028C20C95004DBD87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECAEF08D28C22288004DBD87 /* MediaLibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaLibraryViewController.swift; sourceTree = "<group>"; };
+		ECAEF08F28C22295004DBD87 /* ForYouViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForYouViewController.swift; sourceTree = "<group>"; };
+		ECAEF09128C222A1004DBD87 /* AlbumsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsViewController.swift; sourceTree = "<group>"; };
+		ECAEF09328C222AC004DBD87 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		ECAEF09528C22A54004DBD87 /* ExtensionsAlbumsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsAlbumsViewController.swift; sourceTree = "<group>"; };
+		ECAEF09728C235E6004DBD87 /* ModelAlboms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelAlboms.swift; sourceTree = "<group>"; };
+		ECAEF09A28C2561A004DBD87 /* CellThreeFour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellThreeFour.swift; sourceTree = "<group>"; };
+		ECAEF09E28C2563B004DBD87 /* CellFirstSecond.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellFirstSecond.swift; sourceTree = "<group>"; };
+		ECC46C4C28C40E5500D7BD89 /* CellHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +70,86 @@
 		ECAEF07128C20C94004DBD87 /* AlbomsFromThePhotosApp */ = {
 			isa = PBXGroup;
 			children = (
-				ECAEF07228C20C94004DBD87 /* AppDelegate.swift */,
-				ECAEF07428C20C94004DBD87 /* SceneDelegate.swift */,
-				ECAEF07628C20C94004DBD87 /* ViewController.swift */,
-				ECAEF07828C20C94004DBD87 /* Main.storyboard */,
-				ECAEF07B28C20C95004DBD87 /* Assets.xcassets */,
-				ECAEF07D28C20C95004DBD87 /* LaunchScreen.storyboard */,
-				ECAEF08028C20C95004DBD87 /* Info.plist */,
+				ECAEF08C28C20E52004DBD87 /* Resources */,
+				ECAEF08A28C20E4E004DBD87 /* Sources */,
 			);
 			path = AlbomsFromThePhotosApp;
+			sourceTree = "<group>";
+		};
+		ECAEF08628C20E45004DBD87 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				ECAEF07228C20C94004DBD87 /* AppDelegate.swift */,
+				ECAEF07428C20C94004DBD87 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		ECAEF08828C20E4A004DBD87 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ECAEF09728C235E6004DBD87 /* ModelAlboms.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ECAEF08A28C20E4E004DBD87 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				ECAEF09928C255FF004DBD87 /* Cell */,
+				ECAEF08828C20E4A004DBD87 /* Model */,
+				ECC46C4B28C3F1C200D7BD89 /* TabBar */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		ECAEF08B28C20E50004DBD87 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				ECAEF08028C20C95004DBD87 /* Info.plist */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		ECAEF08C28C20E52004DBD87 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ECAEF07B28C20C95004DBD87 /* Assets.xcassets */,
+				ECAEF08628C20E45004DBD87 /* App */,
+				ECAEF08B28C20E50004DBD87 /* Configuration */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		ECAEF09928C255FF004DBD87 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				ECAEF09A28C2561A004DBD87 /* CellThreeFour.swift */,
+				ECAEF09E28C2563B004DBD87 /* CellFirstSecond.swift */,
+				ECC46C4C28C40E5500D7BD89 /* CellHeader.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		ECBA7F7828C77C5100C4F180 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				ECAEF08D28C22288004DBD87 /* MediaLibraryViewController.swift */,
+				ECAEF08F28C22295004DBD87 /* ForYouViewController.swift */,
+				ECAEF09128C222A1004DBD87 /* AlbumsViewController.swift */,
+				ECAEF09528C22A54004DBD87 /* ExtensionsAlbumsViewController.swift */,
+				ECAEF09328C222AC004DBD87 /* SearchViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		ECC46C4B28C3F1C200D7BD89 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				ECAEF07628C20C94004DBD87 /* TabBarController.swift */,
+				ECBA7F7828C77C5100C4F180 /* ViewControllers */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +210,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECAEF07F28C20C95004DBD87 /* LaunchScreen.storyboard in Resources */,
 				ECAEF07C28C20C95004DBD87 /* Assets.xcassets in Resources */,
-				ECAEF07A28C20C94004DBD87 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,32 +221,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECAEF07728C20C94004DBD87 /* ViewController.swift in Sources */,
+				ECAEF09828C235E6004DBD87 /* ModelAlboms.swift in Sources */,
+				ECAEF07728C20C94004DBD87 /* TabBarController.swift in Sources */,
+				ECAEF09428C222AC004DBD87 /* SearchViewController.swift in Sources */,
+				ECAEF09228C222A1004DBD87 /* AlbumsViewController.swift in Sources */,
+				ECC46C4D28C40E5500D7BD89 /* CellHeader.swift in Sources */,
+				ECAEF09B28C2561A004DBD87 /* CellThreeFour.swift in Sources */,
+				ECAEF09F28C2563B004DBD87 /* CellFirstSecond.swift in Sources */,
+				ECAEF09628C22A54004DBD87 /* ExtensionsAlbumsViewController.swift in Sources */,
 				ECAEF07328C20C94004DBD87 /* AppDelegate.swift in Sources */,
+				ECAEF08E28C22288004DBD87 /* MediaLibraryViewController.swift in Sources */,
+				ECAEF09028C22295004DBD87 /* ForYouViewController.swift in Sources */,
 				ECAEF07528C20C94004DBD87 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		ECAEF07828C20C94004DBD87 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ECAEF07928C20C94004DBD87 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		ECAEF07D28C20C95004DBD87 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ECAEF07E28C20C95004DBD87 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		ECAEF08128C20C95004DBD87 /* Debug */ = {
@@ -216,7 +289,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +343,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -292,9 +365,9 @@
 				INFOPLIST_FILE = AlbomsFromThePhotosApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -320,9 +393,9 @@
 				INFOPLIST_FILE = AlbomsFromThePhotosApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
